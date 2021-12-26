@@ -1,0 +1,18 @@
+prep interview kit,12,14
+auto code gen project,30,95
+myammar dashboard sketch,2,5
+myammar dashboard database setup,1,5
+myammar dashboard first demo,2,12
+tensorflow certificate,5,23
+read Amath353 Notes,10,23
+activity plan,10,23
+task scheduler app,5,8
+apply to schools,5,5
+kaggle 3d tracking + trend extraction/prediction,6,6
+ask for recommendation letter,1,2
+crawler for sentiment research,2,2
+read Apostol Calculus book & problem sets,17,17
+toptal entrance,1,25
+understanding api error codes,1,5
+setup kubernetes with gitlab CI/CD,3,5
+ruby tutorial,3,15
