@@ -1,45 +1,53 @@
-# electron-quick-start
+# python-app-with-electron-gui
+A better way to make GUIs for your Python apps
 
-**Clone and run for a quick way to see Electron in action.**
+![visitors](https://visitor-badge.glitch.me/badge?page_id=SouravJohar.visitor-badge)
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/latest/tutorial/quick-start) within the Electron documentation.
+Use HTML, JavaScript and CSS to make highly customized, cross platfrom desktop apps which use native Python backends.
 
-**Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
+https://youtu.be/627VBkAhKTc
 
-A basic Electron application needs just these files:
+<img src="/samples/1.png" width="50%" />
+<img src="/samples/3.png" width="50%" />
 
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
 
-You can learn more about each of these components within the [Quick Start Guide](https://electronjs.org/docs/latest/tutorial/quick-start).
 
-## To Use
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+Note: This is for educational purposes only, this may not be efficient or bug-free. Also, this is just a demo on how
+JS and Python can be used to interact together. This demo is *NOT* meant to show face detection or object detection.
 
-```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
-npm install
-# Run the app
-npm start
-```
+## General Dependenices
+  * Python
+  * NodeJS
+  * electron.js
+  * python-shell
+ 
+## Specific Dependencies
+  * weather module:
+    * requests
+    * beautifulsoup4
+   
+  * object detection module
+    * Flask
+    * tensorflow
+    * keras
+    
+    ## Usage
+    * Clone the repo, and then
+	```sh
+	$ cd electron-app-with-python-gui
+	$ pip install -r requirements.txt
+	$ npm install
+	$ npm start
+	```
+    * If you want to use the object detection module, make sure the flask server [object_detection.py] is up and running before starting the GUI.
+	```sh
+	$ cd engine
+	$ python object_detection.py
+	```
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+## Note:
 
-## Resources for Learning Electron
-
-- [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
-- [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
-
-## License
-
-[CC0 1.0 (Public Domain)](LICENSE.md)
+weather_engine.py uses web-scraping to pull data off the internet, from a particular website. If this site happens to be modified
+or changed in the future, the code *might* break. However, this can be fixed by analyzing the new layout of the site and adjusting
+the python code accordingly.

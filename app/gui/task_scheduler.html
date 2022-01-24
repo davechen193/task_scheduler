@@ -1,0 +1,33 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script id="script1" src="linkers/task_scheduler.js"></script>
+</head>
+<style>
+  body {
+    background-image: url('images/time_management.png');
+  }
+  div.content {
+      background: rgba(0, 151, 138, 0.863);
+      padding: 10px;
+      text-align:justify; 
+  }
+</style>
+<body>
+  <br>
+  <div class="container">
+    <h2>Task Scheduler</h2>
+    <br/>
+    <p>Enter your tasks here:</p>
+    <textarea id="input" name="w3review" rows="5" cols="100"/></textarea>
+    <br/><br/><br/>
+    <button class="btn btn-success" onclick="schedules()">submit</button>
+    <br/><br/>
+  </div>
+  <div class="content">
+    <h3>Schedules</h3>
+    <div class="display-area">
+      <p id="output"></p>
+    </div>
+  </div>
+<body>

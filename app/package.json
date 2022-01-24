@@ -1,27 +1,21 @@
 {
-  "name": "electron-quick-start",
+  "name": "task_scheduler",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^16.0.5"
+    "electron": "^1.8.4",
+    "electron-packager": "^15.4.0"
   },
   "dependencies": {
-    "aws-sdk":"^2",
-    "mongoose":"latest",
-    "mysql":"latest"
+    "child_process": "latest",
+    "ls": "latest",
+    "fs": "latest"
   }
 }

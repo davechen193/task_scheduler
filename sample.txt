@@ -1,18 +1,12 @@
-prep interview kit,12,14
-auto code gen project,30,95
-myammar dashboard sketch,2,5
-myammar dashboard database setup,1,5
-myammar dashboard first demo,2,12
-tensorflow certificate,5,23
-read Amath353 Notes,10,23
-activity plan,10,23
-task scheduler app,5,8
-apply to schools,5,5
-kaggle 3d tracking + trend extraction/prediction,6,6
-ask for recommendation letter,1,2
-crawler for sentiment research,2,2
-read Apostol Calculus book & problem sets,17,17
-toptal entrance,1,25
-understanding api error codes,1,5
-setup kubernetes with gitlab CI/CD,3,5
-ruby tutorial,3,15
+Kaggle Competition,19,21
+MERN stack course,13,15
+Personal Website Template,3,3
+activity plan,3,3
+healthy diet app,10,11
+google search aid,4,4
+auto code gen project,30,72
+crypto blockchain research,7,24
+Math Language Modeling,3,3
+job search,22,22
+stock portfolio dashboard,11,25
+spotify playlist synthesizer,25,55

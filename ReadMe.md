@@ -7,27 +7,29 @@ Assume that we are given some tasks with due dates. To avoid overdue tasks,
 the scheduler does not schedule tasks past their due dates and tend to add
 onto schedules to the right to make less congestion for each single day.
 
-How to use? Well, it's easy, just submit a few of tasks like the following:
-
-prepare meeting,3,7
-
-Supposedly, hero has a meeting that needs to be attend to within the next 7 days for
-3 times; he promptly entered the below tasks:
-
-prepare meeting,3,7
-
-prepare class,1,7
-
-
-By using the Task Scheduler, we get something like this:
-
-wednesday_12/22 ['prepare meeting']
-
-thursday_12/23 ['prepare meeting']
-
-friday_12/24 ['prepare meeting']
-
-saturday_12/25 ['prepare class']
-
-
-Voila! Now we can begin to clear our todo list by planning out the tasks for each day. Very convenient right?
+Boosting task scheduler with electron:
+1. add a frontend and a backend server to the stack.
+2. personalized data processing using s3 (data protocol with s3 instead of using database)
+  * login.json (content includes login info, encoded string maps to a userid)
+  {
+    "content": [string],
+    "users": {
+      "encoded": string
+    }
+  }
+  * users.json (content includes users table indexed by user id)
+  {
+    "userid": string,
+    "tasks": [string]
+  }
+  * tasks.json (content includes tasks table indexed by task id)
+  {
+    "taskid": string,
+    "duration": int,
+    "due_date": Date,
+    "description": string
+  }
+3. rendering schedules
+  * add / remove task by using the db_connect function
+  * create schedule: tasks to schedule optimization algorithm
+  * add description: task notes are modifiable within the task object

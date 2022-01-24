@@ -1,5 +1,1 @@
-walk the dog,3,7
-write paper,1,5
-prepare meeting,3,7
-prepare class,1,7
-exercise,3,7
+stock portfolio,6,12
